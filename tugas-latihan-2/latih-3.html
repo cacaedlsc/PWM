@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>[Latihan-3] Teknik Informatika</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px;
+        }
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            position: fixed; /* Tambahkan properti position: fixed; */
+            bottom: 0; /* Tempatkan footer di bagian bawah */
+            width: 100%; /* Lebar footer sesuai dengan lebar layar */
+            z-index: 1030; /* Z-index untuk menempatkan footer di atas konten */
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+            position: fixed;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .footer-margin-bottom {
+            margin-bottom: 10px; /* Tambah margin bottom untuk menghindari footer menutupi konten */
+        }
+
+        .footer-margin-top {
+            margin-top: 60px; /* Tambah margin top untuk menghindari menu navbar menutupi konten */
+        }
+
+        .footer-margin-end {
+            margin-bottom: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Menambahkan kelas navbar-fixed-top -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Home -->
+    <div id="home" class="container-fluid text-center footer-margin-top footer-margin-bottom"> <!-- Tambah kelas footer-margin -->
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">RISTEK DIKTI</a></p>
+                <p><a href="#">UNISBANK</a></p>
+                <p><a href="#">FTII UNISBANK</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Welcome</h1>
+                <p>Selamat datang di website ini, website ini hadir untuk anda dalam rangka meningkatkan kemampuan berbagi ilmu tentang pemograman web mobile. Seperti website website sebelumnya, website ini diharapkan dapat membantu anda semua. </p>
+                <p>Website ini adalah sumber daya yang dirancang untuk membantu Anda mempelajari lebih lanjut tentang pemrograman web mobile. Kami berkomitmen untuk menyediakan konten-konten yang bermanfaat dan tutorial-tutorial yang informatif agar Anda dapat mengembangkan keterampilan Anda di dunia pemrograman web. Selamat belajar!</p>
+                <hr>
+                <h3>Motto</h3>
+                <p>Kalau mereka bisa maka apa? Iya betul, mereka aja.</p>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Profile -->
+    <div id="profile" class="container-fluid text-center footer-margin-bottom">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">RISTEK DIKTI</a></p>
+                <p><a href="#">UNISBANK</a></p>
+                <p><a href="#">FTII UNISBANK</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Profile</h1>
+                <p>Perkembangan internet saat ini membuka mata kita semakin lebar untuk terus berbagi pengetahuan ilmu komputer. Di zaman yang serba digital ini akan menuntut sumber daya manusia yang dapat mengoperasikan komputer dan gadget lainnya dengan baik, baik untuk perkerjaan ataupun untuk dunia pendidikan. Dengan tuntutan untuk terus maju dan berkembang, perlu adanya kesadaran diri untuk menyesuaikan dengan kemajuan zaman dari tahun ke tahun.</p>
+                <hr>
+                <h3>Sejarah</h3>
+                <p>Ilmu komputer bukan hal baru dan sudah menjadi kebutuhan di berbagai bidang usaha karena sangat besar manfaatnya. Ilmu komputer berakar dari elektronika, matematika dan linguistik. Dalam tiga dekade terakhir dari abad ke-20, ilmu komputer telah menjadi suatu disiplin ilmu baru dan telah mengembangkan metode dan istilah sendiri. Departemen ilmu komputer pertama didirikan di Universitas Purdue pada tahun 1962.</p>
+                <hr>
+                <h3>Owner</h3>
+                <p>Salsabilla Edlanda Putri</p>
+            </div>
+            <div class="col-sm-2 sidenav">   
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Product -->
+    <div id="product" class="container-fluid text-center footer-margin-bottom">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">RISTEK DIKTI</a></p>
+                <p><a href="#">UNISBANK</a></p>
+                <p><a href="#">FTII UNISBANK</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Product</h1>
+                <p>Website ini berisi berbagai konten berbagi pengetahuan mengenai ilmu komputer.Dari mulai vidio interaktif mengenai code dan pengimplementasiannya, hingga kuis seru dan menyenangkan untuk membantu Anda berkembang.</p>
+                <hr>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione voluptates, nulla quisquam consequatur non illum obcaecati? Omnis in, repellendus quis sed expedita dignissimos eaque! Odit impedit distinctio repellat provident?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi repudiandae exercitationem voluptatem! Quasi cum, commodi numquam ab eius ad nobis aspernatur laboriosam dolorum maiores doloremque quis autem alias voluptatem nesciunt amet porro, aliquid, nostrum sapiente vero quas voluptate animi iure. Suscipit aliquam consequuntur atque amet provident eum? A excepturi cumque sed, quidem sequi eaque facilis. Hic dolor, nostrum, laborum maiores aspernatur tempora consequatur aut quibusdam culpa eum voluptatum dolorum laudantium repudiandae commodi ipsa eius est quos sunt?</p>
+                <hr>
+                <h3>Tips dan Trik</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At soluta repellat voluptates, veniam est impedit distinctio velit quo eius qui? Debitis, a? </p>
+            </div>
+            <div class="col-sm-2 sidenav">   
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Services -->
+    <div id="services" class="container-fluid text-center footer-margin-bottom">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">RISTEK DIKTI</a></p>
+                <p><a href="#">UNISBANK</a></p>
+                <p><a href="#">FTII UNISBANK</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Services</h1>
+                <p>Nikmati layanan yang ada di web ini ...</p>
+                <hr>
+                <h3>Lihat Video</h3>
+                    <div class="youtube-thumbnail">
+                        <a href="https://www.youtube.com/watch?v=7VvWzOqXQN0">
+                            <img src="https://img.youtube.com/vi/7VvWzOqXQN0/maxresdefault.jpg" alt="Video Thumbnail" style="max-width: 20%;">
+                        </a>
+                    </div>
+                <hr>
+                <h3>Baca Artikel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aut! Consectetur et porro nihil adipisci ex.</p>
+                <p><a href="#">Cara Jitu Belajar Ilmu Komputer</a></p>
+                <p><a href="#">Mengerti Dasar Dasar Ilmu Komputer</a></p>
+            </div>
+            <div class="col-sm-2 sidenav">   
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Product -->
+    <div id="contact" class="container-fluid text-center footer-margin-end">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">RISTEK DIKTI</a></p>
+                <p><a href="#">UNISBANK</a></p>
+                <p><a href="#">FTII UNISBANK</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Contact</h1>
+                <p>office : <a href="https://www.instagram.com/salsaedl">@ home @ everywhere :)</a></p>
+                <hr>
+                <h3>Sosial Media</h3>
+                <p>Instagram : <a href="https://www.instagram.com/salsaedl">instagram.com/salsaedl</a></p>
+                <p>Twitter : <a href="https://twitter.com/elonmusk">twitter.com/salsaedl</a></p>
+            </div>
+            <div class="col-sm-2 sidenav">   
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center"> <!-- Footer tetap terlihat di bagian bawah saat di-scroll -->
+        <p>Produced by Caca E 2201530047</p>
+    </footer>
+</body>
+</html>
